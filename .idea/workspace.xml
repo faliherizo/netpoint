@@ -32,12 +32,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="labels.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="labels.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/labels.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="109">
               <caret line="161" column="24" selection-start-line="161" selection-start-column="24" selection-end-line="161" selection-end-column="24" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -138,6 +160,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/netPoint/applications/site/dao/InterfaceDaoClientImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/netPoint/applications/site/controller/AcceuilController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/labels.properties" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -765,12 +788,12 @@
       <workItem from="1484239076283" duration="3943000" />
       <workItem from="1485370061158" duration="920000" />
       <workItem from="1486121484710" duration="1012000" />
-      <workItem from="1486638680289" duration="419000" />
+      <workItem from="1486638680289" duration="618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15924000" />
+    <option name="totallyTimeSpent" value="16123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="42" width="1400" height="689" extended-state="0" />
@@ -1208,6 +1231,26 @@
         <state relative-caret-position="109">
           <caret line="161" column="24" selection-start-line="161" selection-start-column="24" selection-end-line="161" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
