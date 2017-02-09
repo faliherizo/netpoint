@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <h5>
+     Dear ${user.userName},
+    <div>
+	       We kindly request you to enter your time sheet for the month of ${month}.<br>
+	       This is a gentle reminder to all. Please ignore this mail if you have<br>
+	       already fill your time sheet.
+	    </div>
+    <br>
+	    Thank you for your cooperation.<br>
+	    Kind regards, <br>
+	    XYZ
+	   </h5>
+	  </body>
+</html>

@@ -1,0 +1,204 @@
+.modal_main {
+    margin:                 0px; 
+    padding:                0px;
+}
+
+.modal_main .resultat .grid-option {
+	line-height:        	25px;
+	height: 				25px;
+	
+}
+
+.modal_main .resultat .grid-option ul {
+	background-image: 		url(../images/main_content/resultat/grid-option-background.gif);
+	background-repeat:		repeat-x;
+	background-position:	bottom;
+	line-height: 			25px;
+	height: 				25px;
+}
+
+.modal_main .resultat .grid-option ul li {
+	display:				inline;
+    font-weight:            bold;
+}
+
+.modal_main .resultat .grid-option ul li#modify {
+	background: 			url(../images/main_content/dhtml-xgrid/pencil.gif);
+	background-repeat:		no-repeat;
+	background-position: 	bottom left;
+	margin-left:			5px;
+	padding-left:			14px;
+    
+}
+
+#page_main2 #resultat #grid-option ul li#deleteAc {
+	background: 						url(../images/main_content/dhtml-xgrid/delete.png);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						5px;
+	padding-left:						14px;
+}
+
+.modal_main .resultat .grid-option ul li#validate {
+	background: 			url(../images/main_content/dhtml-xgrid/disk.gif);
+	background-repeat:		no-repeat;
+	background-position: 	bottom left;
+	margin-left:			5px;
+	padding-left:			14px;
+}
+
+.modal_main .resultat .grid-option ul li a {
+	background-image: 		url(../images/main_content/resultat/grid-option-separator.gif);
+	background-position:	right;
+	background-repeat:		no-repeat;
+	color:					black;
+	padding-left:			5px;
+	padding-right:			10px;
+}
+
+.modal_main .x-panel-header-text {
+    color:                  #ffffff;
+}
+
+.modal_main .grids {
+    height:                 200px;
+}
+
+.modal_main .gridsAC {
+    height:                 180px;
+}
+
+.modal_main .gridsBadges {
+    height:                 120px;
+}
+
+.modal_main #grid_left {
+    position:               absolute;
+    width:                  300px;
+    height:                 200px;
+}
+
+.modal_main #grid_leftAC {
+    position:               absolute;
+    width:                  375px;
+    height:                 160px;
+}
+
+
+.modal_main #buttons_center {
+    position:               absolute;
+    left:                   305px;
+    padding:                75px 10px 75px 10px;
+}
+
+.modal_main #buttons_centerAC {
+    position:               absolute;
+    left:                   375px;
+    padding:                75px 10px 75px 10px;
+}
+
+.modal_main #grid_right {
+    position:               absolute;
+    width:                  300px;
+    height:                 200px;
+    left:                   342px;
+}
+
+.modal_main #grid_rightAC {
+    position:               absolute;
+    width:                  390px;
+    height:                 160x;
+    right:                  20px;
+}
+.modal_main #buttons_center #btn{
+    display:                block;
+    border:                 1px solid #000;
+}
+
+.modal_main #buttons_centerAC #btnAC{
+    display:                block;
+    border:                 1px solid #000;
+}
+
+div.modal {
+    padding-left:           10px;
+}
+
+/* DKR: My rule */
+#racdisp, #mesrac {
+    float:                  left;
+    margin:                 20px;
+    border:                 1px solid #c3daf9;
+    width:                  250px;
+    height:                 300px;
+    display:                inline;
+}
+
+/*
+================================================================================ 
+Modale accueil-interim.jsp (onglets)
+================================================================================ 
+*/
+
+#tabsPanel {
+    margin:                 5px;    
+}
+
+#tabsPanel blocks {
+    zoom:                   1;
+}
+
+#tabsPanel block {
+    height: 40px;
+    zoom:1;
+}
+
+#tabsPanel #tab1, 
+#tabsPanel #tab2,
+#tabsPanel #tab3,
+#tabsPanel #tab4 {
+    height:                 100%;
+}
+
+#tabsPanel .date-ext {
+    height:                 40px;
+}
+
+#tabsPanel legend{
+    font-weight:            bold;
+    color:                  #0046D5;
+}
+
+/*
+================================================================================ 
+Fiche individuelle (onglets)
+================================================================================ 
+*/
+
+#tabsPanel1 {
+    margin:                 0px;   
+}
+
+#tabsPanel1 blocks {
+    zoom:                   1;
+     margin-top:             0px;
+}
+
+#tabsPanel1 block {
+    height: 40px;
+}
+
+#tabsPanel1 #tab1, 
+#tabsPanel1 #tab2,
+#tabsPanel1 #tab3,
+#tabsPanel1 #tab4,
+#tabsPanel1 #tab5 {
+    height:                 50%;
+    margin-top:             0px;
+}
+
+
+#tabsPanel1 legend{
+    font-weight:            bold;
+    color:                  #0046D5;
+}

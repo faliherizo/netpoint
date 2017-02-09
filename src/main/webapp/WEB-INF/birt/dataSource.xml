@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<DataTools.ServerProfiles version="1.0">
+		<profile autoconnect="No" desc="" id="50514b20-a83a-11e1-a475-cf7005afd6ff" name="dateBase" providerID="org.eclipse.birt.report.data.oda.jdbc">
+			<baseproperties>
+				<property name="disabledMetadataBidiFormatStr" value=""/>
+				<property name="odaDriverClass" value="com.mysql.jdbc.Driver"/>
+				<property name="odaURL" value="jdbc:mysql://localhost/mondsi"/>
+				<property name="disabledContentBidiFormatStr" value=""/>
+				<property name="odaPassword" value=""/>
+				<property name="odaUser" value="root"/>
+				<property name="contentBidiFormatStr" value="ILYNN"/>
+				<property name="metadataBidiFormatStr" value="ILYNN"/>
+			</baseproperties>
+		</profile>
+	</DataTools.ServerProfiles>

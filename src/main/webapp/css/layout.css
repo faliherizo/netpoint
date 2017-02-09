@@ -1,0 +1,1926 @@
+/*
+================================================================================ 
+Styles Communs
+================================================================================ 
+*/
+
+.bold {
+    font-weight: bold;
+}
+
+.bold11 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/*
+================================================================================ 
+HEADER
+================================================================================ 
+*/
+#page_header {
+	height: 							60px;
+	background: 						#80574F url(images/header/background.jpg) no-repeat left center;
+	border-bottom: 						solid 2px #B6660D;
+}
+
+#page_header #preference {
+	float:								right;
+}
+
+#page_header #preference ul {
+	float: 								left;
+	list-style:							none;
+}
+
+#page_header #preference ul li {
+	float: 								left;
+	margin:								5px;
+	padding-top: 						8px;
+}
+
+#page_header #preference ul li#mail {
+	background: 						url(images/header/mail.gif) no-repeat right center;
+	background-position: 				bottom left;
+	padding-left:						23px;
+}
+#page_header #preference ul li#deconnect {
+	background-position: 				bottom left;
+	padding-left:						23px;
+}
+
+#page_header #preference ul li#aide {
+	background: 						url(images/header/aide.gif) no-repeat right center;
+	background-position: 				bottom left;
+	padding-left:						23px;
+}
+
+#page_header #preference ul li a {
+	float: 							left;
+	padding-right:						10px;
+	text-decoration:					underline;
+	background: 						url(images/header/separator.png) no-repeat right center;
+}
+
+#page_header #preference h4 {
+	clear:							both;
+	text-align: 						right;
+	line-height:						30px;
+}
+
+#page_header h1 {
+	margin-left:						10px;
+	font-size: 						26px;
+	padding-top: 						5px;
+}
+
+#page_header h2 {
+	margin-left:						10px;
+	font-size: 						26px;
+	padding-top: 						5px;
+	float:							right;
+	margin-right:						2px;
+}
+
+#page_header span {
+	margin-left:						61px;
+/*	font-size: 							12px;*/
+}
+
+
+.date-ext .x-form-field-wrap .x-form-trigger {
+	BORDER-BOTTOM: none;
+}
+
+.modal_main .x-panel-header, .modal_main .x-panel-header-text {
+    color: #fff;
+}
+
+.modal-icon {
+    background-image: url(images/extJs/grid/columns.gif);
+}
+/*
+================================================================================ 
+BARRE DE MENU
+================================================================================ 
+*/
+#page_onglet {
+	position:							absolute;
+	width:								100%;
+	overflow: 							hidden;
+	background-image: 					url(images/onglet/background.jpg);
+	background-position: 				bottom;
+	background-repeat: 					repeat-x;
+	border-bottom: 						solid 3px #E67201;
+}
+
+#page_onglet ul {
+  	margin-top: 						9px;
+  	padding: 							0px;
+  	list-style: 						none;
+}
+
+#page_onglet li {
+  	float: 								left;
+  	margin-left: 						3px;
+  	padding-left: 						3px;
+  	background-image: 					url(images/onglet/onglet-gauche.gif);
+  	background-repeat: 					no-repeat;
+  	height:								21px;
+  	line-height: 						21px;
+}
+
+#page_onglet ul li#actif {
+  	float: 								left;
+  	margin-left: 						3px;
+  	padding-left: 						3px;
+  	background-image: 					url(images/onglet/onglet-gauche-activate.gif);
+ 	background-repeat: 					no-repeat;
+  	height:								21px;
+  	line-height: 						21px;
+}
+
+#page_onglet ul li a {
+  	float: 								left;
+  	padding-left:						7px;
+  	padding-right:						10px;
+  	background-image: 					url(images/onglet/onglet-droit.gif);
+  	background-position: 				right;
+  	background-repeat: 					no-repeat;
+  	font-weight: 						bold;
+  	color:								black;
+}
+
+#page_onglet ul li#actif a {
+  	float: 								left;
+  	padding-left:						7px;
+  	padding-right:						12px;
+  	background-image: 					url(images/onglet/onglet-droit-activate.gif);
+  	background-position: 				right;
+  	background-repeat: 					no-repeat;
+  	font-weight: 						bold;
+  	color:								white;
+}
+
+/*
+================================================================================ 
+CONTENU PRINCIPAL
+================================================================================ 
+*/
+#page_main {
+	color:								black;
+	margin-top:							32px;
+	position:							relative;
+	
+	
+}
+
+#page_main #main_fil_ariane {
+	line-height:				25px;
+	height:					25px;
+	color:					black;
+	font-size:				1.1em;
+
+}
+
+#page_main #main_fil_ariane a {
+	color:					black;
+	text-decoration: 			underline;
+}
+
+#page_main #main_menu {
+	position: 				absolute;
+	width: 					175px;
+	
+}
+
+#page_main #main_menu .menu {
+	background-image: 			url(images/theme/background.gif);
+	background-repeat:			repeat-x;
+	line-height:				22px;
+	border-left:				solid 1px #999999;
+	border-right:				solid 1px #999999;
+	border-bottom:				solid 1px #999999;
+	cursor:                     pointer;
+	width:                      173px;
+}
+
+#page_main #main_menu .menu-current {
+    
+	background-image: 			url(images/theme/background-current.gif);
+	background-repeat:			repeat-x; 
+	line-height:				22px;
+	border-left:				solid 1px #999999;
+	border-right:				solid 1px #999999;
+	border-bottom:			    solid 1px #999999;
+	cursor:                     pointer;
+	width:                      173px;
+}
+
+#page_main #main_menu .menu h3 {
+	padding-left:				10px;
+	color:                      black;
+	font-weight: 				bold;
+}
+
+#page_main #main_menu .menu-current h3 {
+	padding-left:				10px;
+	color:                      white;
+	font-weight: 				bold;
+}
+
+#page_main #main_menu ul {
+	border-top:                 solid 1px #999999;
+}
+
+#page_main #main_menu ul li {
+	background-image: 					none;
+	background-color:					white;
+	border:								0px;
+	font-weight: 						normal;
+	line-height:						19px;
+	height:								19px;
+}
+
+#page_main #main_menu ul li.selected {
+	background-color:					white;
+	border:								0px;
+	font-weight: 						normal;
+	line-height:						19px;
+	height:								19px;
+	background-image: 					url(images/theme/current.gif);
+ 	background-repeat: 					no-repeat;
+	background-position: 				5px;
+}
+
+#page_main #main_menu ul li a {
+	padding-left:						15px;
+	color:								black;
+    zoom:                               1;
+    display:                            block;
+}
+
+#page_main #main_menu ul li a:hover {
+	background-color:					#E0E0E2;
+}
+
+#page_main #main_content {
+	position:							relative;
+	left: 								0px;
+	right:								0px;
+	background-image: 					url(images/main_content/header.gif);
+	background-repeat:					repeat-x;
+	background-position:				top;
+	border-left:						solid 1px #CBCBCB;
+	border-right:						solid 1px #CBCBCB;
+	padding:							13px 10px 0px 10px;
+	background-color:					white;
+	border-bottom:						solid 1px #CBCBCB;
+}
+
+
+.hidemenu {
+	position:							absolute;
+	right:								-16px;
+	top:								0px;
+}
+
+#filtered
+{
+    font-weight: bold;
+}
+
+.clearleft {
+    clear: left;
+}
+
+.clearright {
+    clear: right;
+}
+
+.clearboth {
+    clear: both;
+}
+/*
+================================================================================ 
+ICONE D'AIDE POUR LA PAGE EN COURS DE CONSULTATION
+================================================================================ 
+*/
+#main_content #pagehelp1
+{
+	background-image: 		url(images/header/aide.gif);
+	background-repeat:		no-repeat;
+	position: 				absolute;
+	top:                    8px;
+	right:                  25px;
+	height:					24px;
+    width:				    24px;
+    z-index:200;
+}
+
+#main_content #pagehelp
+{
+	background-image: 		url(images/header/aide.gif);
+	background-repeat:		no-repeat;
+	position: 				absolute;
+	top:                    19px;
+	right:                  10px;
+	height:					24px;
+    width:				24px;
+    z-index:200;
+}
+
+/*
+#page_main #main_content .resultat .grid-option ul li#modify {
+	background: 			url(images/main_content/dhtml-xgrid/pencil.gif);
+	background-repeat:		no-repeat;
+	background-position: 	bottom left;
+	margin-left:			5px;
+	padding-left:			14px;
+    
+}
+*/
+
+/*
+================================================================================ 
+FORMULAIRE DE RECHERCHE
+================================================================================ 
+*/
+ #main_content #recherche 
+{
+    display: block;
+	border-top:             solid 2px #999999;
+	border-left:			solid 2px #CBCBCB;
+	border-right:			solid 2px #CBCBCB;
+	border-bottom:			solid 2px #CBCBCB;
+	background-color:		white;
+	
+}
+
+#main_content #recherche h4 {
+	background-image: 		url(images/main_content/recherche/titre-recherche.gif);
+	border-bottom:			solid 1px #CBCBCB;
+	background-repeat:		repeat-x;
+	background-position:    top;
+	line-height: 			24px;
+	height:                 24px;
+	padding-left:			10px;
+	cursor:                 pointer;
+	
+}
+
+.minus {
+	background-image: 		url(images/main_content/recherche/minus.gif);
+	background-position:	left;
+	background-repeat:		no-repeat;
+	color:                  black;
+	font-weight: 			bold;
+	padding-left:			20px;
+	cursor:                 pointer;
+}
+	
+.maxus {
+	background-image:       url(images/main_content/recherche/maximise.gif);
+	background-position:	left;
+	background-repeat:		no-repeat;
+	color:                  black;
+	font-weight:			bold;
+	padding-left:			20px;
+	cursor:                 pointer;
+}
+
+.orange {
+	color:					#E67201;
+	font-weight:			bold;
+}
+	
+ #main_content #recherche #critere .attribut {
+	
+	float:								left;
+	display:							block;
+	padding-right:						5px;
+	padding-left:						5px;
+	padding-top:						2px;
+	padding-bottom:						2px;
+	width:								200px;
+	line-height: 						22px;
+}
+
+ #main_content #recherche #critere .attribut1 {
+	
+	float:								left;
+	display:							block;
+	padding-right:						60px;
+	padding-left:						10px;
+	padding-top:						2px;
+	padding-bottom:						2px;
+	width:								300px;
+	line-height: 						30px;
+}
+
+ #main_content #recherche #critere .attribut1 fieldset legend{
+	font-weight: bold;
+	color:black;
+}
+
+ #main_content #recherche #critere .attribut2 {
+	
+	float:								left;
+	display:							block;
+	padding-right:						5px;
+	padding-left:						5px;
+	padding-top:						2px;
+	padding-bottom:						2px;
+	width:								600px;
+	line-height: 						30px;
+}
+
+ #main_content #recherche #critere .attribut label1 {
+	display:							block;
+	width:								300px;
+	color:								black;
+	font-size:							11px;
+}
+
+
+ #main_content #recherche #critere .chkbox {
+	float: left;
+	padding: 5px;
+}
+
+ #main_content #recherche #critere .chkbox1 {
+	float: left;
+	padding: 10px;
+}
+
+ #main_content #recherche .chkbox {
+	float: left;
+	padding: 5px;
+	clear: left;
+	font-size: 11px;
+}
+
+#main_content #recherche #critere .attributButton {
+	
+	display:							block;
+	text-align: 						right;
+	height: 							22px;
+	margin-right : 5px;
+	right : 5px;
+}
+
+ #main_content #recherche .attributButton {
+	float: right;
+	padding: 5px;
+}
+    
+
+
+#main_content #recherche #critere .attributButtonRup {
+	position:							relative;
+	display:							block;
+	text-align: 						right;
+	width:								240px;
+	height: 							22px;
+	margin-right : 5px;
+	right : 5px;
+}
+
+#main_content #recherche #critere .rechercher {
+	bottom:								1px;
+	position:							absolute;
+	height:								20px;
+}
+
+ #main_content #recherche #critere .attribut label {
+	display:							block;
+	width:								200px;
+	color:								black;
+	font-size:							11px;
+}
+
+ #main_content #recherche #block {
+    zoom: 1;
+}
+/*
+================================================================================ 
+RESULTAT DE LA RECHERCHE
+================================================================================ 
+*/
+
+#resultat {
+	margin-top:				0px;
+	font-size:				11px;
+    zoom: 1;
+}
+
+ #resultat h1 {
+	color:					black;
+	font-weight: 				bold;
+}
+
+#resultat h1 span {
+	color:					#E67201;
+	font-weight: 				bold;
+}
+
+ #resultat #grid {
+    font-size: 11px;
+    clear: right;
+	border:solid 0px red;
+    
+}
+ #resultat td, #page_main #resultat th {
+    font-family:		Tahoma, Arial, Helvetica, sans-serif;
+    font-weight:		normal;
+    
+}
+
+ #resultat th {
+        font-weight:		bold;
+}
+ #resultat #grid-option {
+	line-height: 				25px;
+	height: 				25px;
+    clear: both;
+	
+}
+
+ #resultat #grid-option ul {
+	background-image: 			url(images/main_content/resultat/grid-option-background.gif);
+	background-repeat:			repeat-x;
+	background-position:			bottom;
+	line-height: 				25px;
+	height: 				25px;
+}
+
+ #resultat #grid-option ul li {
+	display:							inline;
+}
+
+#resultat #grid-option ul li#excel {
+	background: 						url(images/main_content/resultat/excel.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						15px;
+}
+
+#resultat #grid-option ul li#fiche {
+	background: 						url(images/main_content/resultat/fiche.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						21px;
+}
+ #resultat #grid-option ul li#conges {
+	background: 						url(images/main_content/resultat/rubis.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						21px;
+}
+
+ #resultat #grid-option ul li#excel {
+	background: 						url(images/main_content/resultat/excel.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						15px;
+}
+
+ #resultat #grid-option ul li#delete {
+	background: 						url(images/main_content/resultat/delete.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						15px;
+}
+ #resultat #grid-option ul li#admin {
+	background: 						url(images/main_content/resultat/grue_xsmall.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						15px;
+}
+
+
+
+ #resultat #grid-option ul li#imprimer {
+	background: 						url(images/bouton/printer.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						21px;
+}
+
+#resultat #grid-option ul li#apercu {
+	background: 						url(images/bouton/apercu.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						21px;
+	padding-bottom: 					3px;
+}
+
+
+ #resultat #grid-option ul li#rup {
+	background: 						url(images/main_content/rup/book_open.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						21px;
+}
+
+ #resultat #grid-option ul li#add {
+	background: 						url(images/main_content/resultat/add.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						5px;
+	padding-left:						14px;
+}
+
+ #resultat #grid-option ul li#modify {
+	background: 						url(images/main_content/dhtml-xgrid/pencil.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						5px;
+	padding-left:						14px;
+}
+
+#page_main2 #resultat #grid-option ul li#deleteAc {
+	background: 						url(images/main_content/dhtml-xgrid/delete.png);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						5px;
+	padding-left:						14px;
+}
+
+#page_main #resultat #grid-option ul li#validate {
+	background: 						url(images/main_content/dhtml-xgrid/disk.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						5px;
+	padding-left:						14px;
+}
+
+#page_main #resultat #grid-option ul li#del {
+	background: 						url(images/main_content/resultat/del.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						14px;
+}
+
+#page_main #resultat #grid-option ul li#newentry {
+	background: 						url(images/main_content/resultat/nouvelle_entree.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+
+#page_main #resultat #grid-option ul li#deleteentry {
+	background: 						url(images/main_content/resultat/supprimer_entree.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+
+#page_main #resultat #grid-option ul li#adduser {
+	background: 						url(images/main_content/resultat/user_add.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+
+#page_main #resultat #grid-option ul li#deleteuser {
+	background: 						url(images/main_content/resultat/user_delete.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+
+#page_main #resultat #grid-option ul li#addgroup {
+	background: 						url(images/main_content/resultat/group_add.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+
+#page_main #resultat #grid-option ul li a {
+	background-image: 					url(images/main_content/resultat/grid-option-separator.gif);
+	background-position:				right;
+	background-repeat:					no-repeat;
+	color:								black;
+	padding-left:						5px;
+	padding-right:						10px;
+}
+
+
+
+#page_main #resultat #grid-option ul li#refuserTransfert {
+	background: 						url(images/main_content/resultat/refuser_transfert.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+#page_main #resultat #grid-option ul li#nouveauTransfert {
+	background: 						url(images/main_content/resultat/nouveau_transfert.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+#page_main #resultat #grid-option ul li#supprimerTransfert {
+	background: 						url(images/main_content/resultat/supprimer_transfert.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+#page_main #resultat #grid-option ul li#modifierTransfert {
+	background: 						url(images/main_content/resultat/modifier_transfert.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+
+#page_main #resultat #grid-option ul li#redirigerTransfert {
+	background: 						url(images/main_content/resultat/rediriger_transfert.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+
+#page_main #resultat #grid-option ul li#validerTransfert {
+	background: 						url(images/main_content/resultat/valider_transfert.gif);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+
+
+/** Autorisations de conduite  **/
+#page_main #resultat #grid-option ul li#delivrerAC {
+	background: 						url(images/main_content/resultat/report_add.png);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+
+#page_main #resultat #grid-option ul li#annulerAC {
+	background: 						url(images/main_content/resultat/report_delete.png);
+	background-repeat:					no-repeat;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+}
+
+/*
+================================================================================ 
+NOUVELLE ENTREE
+================================================================================ 
+*/
+#page_main #main_content #web_flow {
+	height: 60px;
+	font-size: 11px;
+}
+
+#rattacheEdifice {
+	background: url(images/main_content/resultat/database_link.gif);
+	width: 16px;
+	height: 16px;
+	left: 200px;
+	top: 35px;
+	position: absolute;
+}
+
+#page_main #main_content #web_flow h2#aentsor {
+	background: url(images/main_content/resultat/nouvelle_entree.gif) no-repeat left;
+	padding-left:						20px;
+	color: 								#666666;
+	font-size: 							1.5em;
+	font-weight: 						bold;
+    
+}
+
+#page_main #main_content #web_flow h2#modifentsor {
+	background: url(images/main_content/dhtml-xgrid/pencil.gif) no-repeat left;
+	padding-left:						20px;
+	color: 								#666666;
+	font-size: 							1.5em;
+	font-weight: 						bold;  
+}
+
+
+#page_main #main_content #web_flow h2#ageracd {
+	background: url(images/main_content/resultat/report_add.png) no-repeat left;
+	padding-left:						20px;
+	color: 								#666666;
+	font-size: 							1.5em;
+	font-weight: 						bold;
+    
+}
+
+#page_main #main_content #web_flow h2#addAds {
+	background: 		url(images/main_content/resultat/add.gif) no-repeat left;
+	padding-left:						20px;
+	color: 								#666666;
+	font-size: 							1.6em;
+	font-weight: 						bold;
+}
+
+
+#page_main #main_content #web_flow h2#nouveauTransfert {
+	background: 				    url(images/main_content/resultat/nouveau_transfert.gif) no-repeat left;
+	background-position: 				bottom left;
+	margin-left:						3px;
+	padding-left:						18px;
+	padding-bottom: 					3px;
+	color: 								#666666;
+	font-size: 							1.5em;
+	font-weight: 						bold;
+}
+
+#page_main #main_content #web_flow h2#adeccht {
+	background: url(images/main_content/resultat/grue_small.gif) no-repeat left;
+	padding-left:						20px;
+	height: 							30px;
+}
+#page_main #main_content #web_flow h2#adeccht span{
+	color: 								#666666;
+	font-size: 							1.5em;
+	font-weight: 						bold;
+	line-height: 						30px;
+}
+
+ul#flow
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	height: 26px;
+}
+ul#flow li
+{
+	float: left;
+	margin: 0 2px 0 2px;
+	height: 26px;
+}
+
+ul#flow li.depart {
+	background:  #FFF url(images/main_content/process/p-depart.gif) no-repeat center;
+	width: 110px;
+}
+
+ul#flow li.intermediaire {
+	background:  #FFF url(images/main_content/process/p-inter.gif) no-repeat center;
+	width: 128px;
+}
+ul#flow li.fin {
+	background:  #FFF url(images/main_content/process/p-fin.gif) no-repeat center;
+	width: 110px ;
+}
+
+ul#flow li h1{
+	color: #ffffff;
+	text-align: center;
+	margin-left: 40%;
+}
+
+ul#flow li h1.etape{
+	background:  #FFF url(images/main_content/process/cercle-inactif.gif) no-repeat;
+	width: 20px;
+	font-size: 1.4em;
+	line-height: 20px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+ul#flow li h1.etape-active{
+	background: #FFF url(images/main_content/process/cercle-actif.gif) no-repeat;
+	width: 24px;
+	font-size: 1.7em;
+	line-height: 24px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+ul#flow li span{
+	text-align: center;
+	width: 100%;
+}
+
+div#flow-titles{
+	margin: 0;
+	padding: 0;
+	clear: left;
+}
+
+div#flow-titles div{
+	float: left;
+	margin: 0 2px 0 2px;
+	text-align: center;
+}
+
+.actif {
+	color: #000; 
+	font-weight: bold;
+}
+.inactif {
+	color: #666666; 
+}
+
+#page_main #main_content #wf_recherche {
+	font-size: 11px;
+    zoom:1;
+}
+
+#page_main #main_content #wf_recherche #wf_critere {
+	color:								black;
+	clear: 								both;
+    height:                             auto;
+}
+
+#page_main #main_content #wf_recherche #wf_critere .wf_attribut{
+	color:								black;
+	display: 							block;
+	float:								left;
+	padding-right:						10px;
+    height:                             40px;
+}
+
+/* DKR: Règle d'affichage des libellés dans le cas d'une saisie d'informations */
+.saisie {
+	color: #000;
+	font-weight: bold;
+	display: block;
+    font-size: 11px;
+}
+
+.x-form-item label  {
+	font-weight: bold;
+	padding:0;
+	margin: 0;
+	font-size: 11px;
+}
+
+.x-form-item {
+	padding-top: 0;
+	margin: 0;
+}
+
+.x-form-label-top .x-form-element{padding-left:0;padding-top:1px;}
+
+
+.consult {
+	color: #000;
+	font-weight: normal;
+	display: block;
+}
+
+#imginit {
+/*  display: inline;*/
+    margin: 0 7px 0 7px;
+    background: url(images/bouton/arrow_refresh.gif);
+    width: 16px;
+    height: 16px;
+}
+
+/*
+================================================================================ 
+FORMULAIRE DE CATEGORIES
+================================================================================ 
+*/
+
+/*lien "retour à la liste" sur fiche collaborateur*/
+#page_main #main_content #retouralaliste {
+    color:          blue;    
+    float:          right;
+    margin-left:    3px;
+    margin-bottom:  0;
+    font-size:      11px;
+    
+}
+
+/*flêches de navigation et combo fiche collaborateur*/
+#page_main #main_content #barreDeNavigation {		
+    margin:         auto;
+    width:          330px;
+    font-size:      11px;    
+}
+
+/*flêches de navigation fiche collaborateur*/
+#page_main #main_content #barreDeNavigation #flecheNav{
+    float:          left;    
+    height:         22px;    
+    line-height:    22px;
+}
+
+/*combo de collaborateurs fiche collaborateur*/
+#page_main #main_content #barreDeNavigation #lstcollab {
+}
+
+/*formulaire fiche collaborateur*/
+#page_main #main_content #barreDeNavigation #lstcollab form {     
+}
+
+#page_main #main_content #barreDeNavigation span.page {
+	color:          black;
+	font-size:      13px;
+    zoom: 1;
+}
+
+#page_main #main_content #barreDeNavigation span.debut {
+	background-image: url(images/main_content/resultat/page-first.gif);
+	cursor:pointer;    
+}
+
+#page_main #main_content #barreDeNavigation span.precedent {
+	background-image: url(images/main_content/resultat/page-prev.gif);
+	cursor:pointer;
+}
+
+#page_main #main_content #barreDeNavigation span.suivant {
+	background-image: url(images/main_content/resultat/page-next.gif);
+	cursor:pointer;
+}
+
+#page_main #main_content #barreDeNavigation span.fin {
+	background-image: url(images/main_content/resultat/page-last.gif);
+	cursor:pointer;
+}
+
+#page_main #main_content #barreDeNavigation span.debut-disabled {
+	background-image: url(images/main_content/resultat/page-first-disabled.gif);
+}
+
+#page_main #main_content #barreDeNavigation span.precedent-disabled {
+	background-image: url(images/main_content/resultat/page-prev-disabled.gif);
+}
+
+#page_main #main_content #barreDeNavigation span.suivant-disabled {
+	background-image: url(images/main_content/resultat/page-next-disabled.gif);
+}
+
+#page_main #main_content #barreDeNavigation span.fin-disabled {
+	background-image: url(images/main_content/resultat/page-last-disabled.gif);
+}
+
+.datagrid table tr td  {
+	border-bottom: 1px solid #EFEFEF;
+	color:black;
+	font-size: 1em;
+	text-align: left;
+	padding-left: 5px;
+	font-weight: bold;
+	border-spacing:0px;
+	border-collapse:collapse;
+}
+
+
+
+.datagrid table th {
+	color:black;
+	font-size: 1em;
+	text-align: left;
+	padding-left: 5px;
+	background-color: #EFEFEF;
+	border-spacing:0px;
+	border-collapse:collapse;
+}
+
+.datagridAlertes table tr td  {
+	color:black;
+	font-size: 1em;
+	text-align: left;
+	padding-left: 5px;
+
+}
+
+
+.datagridAlertes table th {
+	font-size: 1em;
+	text-align: left;
+	padding-left: 5px;
+	border-spacing:0px;
+
+}
+
+#page_main #main_content #onglet {
+	position:							relative;
+	width:								100%;
+	overflow: 							hidden;
+	border-bottom: 						solid 3px #E67201;
+}
+
+#page_main #main_content #onglet ul {
+  	margin-top: 						9px;
+  	padding: 							0px;
+  	list-style: 						none;
+}
+
+#page_main #main_content #onglet li {
+  	
+  	margin-left: 						3px;
+  	padding-left: 						3px;
+  	background-image: 					url(images/onglet/onglet-gauche.gif);
+  	background-repeat: 					no-repeat;
+  	height:								21px;
+  	line-height: 						21px;
+}
+
+#page_main #main_content #onglet ul li#actif {
+  	float: 								left;
+  	margin-left: 						3px;
+  	padding-left: 						3px;
+  	background-image: 					url(images/onglet/onglet-gauche-activate.gif);
+ 	background-repeat: 					no-repeat;
+  	height:								21px;
+  	line-height: 						21px;
+}
+
+#page_main #main_content #onglet ul li a {
+  	float: 								left;
+  	padding-left:						7px;
+  	padding-right:						10px;
+  	background-image: 					url(images/onglet/onglet-droit.gif);
+  	background-position: 				right;
+  	background-repeat: 					no-repeat;
+  	font-weight: 						bold;
+  	color:								black;
+}
+
+#page_main #main_content #onglet ul li#actif a {
+  	float: 								left;
+  	padding-left:						7px;
+  	padding-right:						12px;
+  	background-image: 					url(images/onglet/onglet-droit-activate.gif);
+  	background-position: 				right;
+  	background-repeat: 					no-repeat;
+  	font-weight: 						bold;
+  	color:								white;
+}
+
+#page_main #main_content #legend{
+		padding-left:						7px;
+  		padding-right:						12px;
+  		padding-bottom:						2px;
+  	 	color:                              black;
+}
+
+#page_main #main_content #legendcategorie{
+		
+  		padding:						1px;
+  	 	color:                              black;
+}
+
+
+
+#page_main #main_content #legendcategorie #impression{
+		/*position:							absolute;
+  	 	height:								30px;
+  	 	right:								10px; 
+  	 	width: 								120px;	
+  	 	float: 								left;*/
+  	 	
+    text-align: center;	
+    vertical-align: bottom;
+}
+
+#page_main #main_content #categories{
+	padding-top:						5px;
+	width: 								99%;
+}
+
+#page_main #main_content #categories #categorie {
+	padding-top:						5px;
+}
+
+#page_main #main_content #categories #categorie h4{
+	background-image: 					url(images/main_content/recherche/titre-recherche.gif);
+	border-bottom:						solid 1px #CBCBCB;
+	background-repeat:					repeat-x;
+	background-position:				top;
+	line-height: 						18px;
+	height:								18px;
+	padding-left:						10px;
+	width: 								100%;		
+	cursor:								pointer;
+}
+
+
+.maxuscategory {
+	background-image: 					url(images/main_content/recherche/maximise.gif);
+	background-position:				left;
+	background-repeat:					no-repeat;
+	color:								black;
+	font-weight: 						bold;
+	left:								0px;
+	cursor:								pointer;
+	float: 								left;
+	height:								16px;
+	width:								16px;
+}
+
+.minuscategory {
+	background-image: 					url(images/main_content/recherche/minus.gif);
+	background-position:				left;
+	background-repeat:					no-repeat;
+	color:								black;
+	font-weight: 						bold;
+	left:								0px;
+	cursor:								pointer;
+	float: 								left;
+	height:								16px;
+	width:								16px;	
+}
+
+.bandeau {	
+	font-weight:                        bold;     
+	background:                         url(images/extJs/tabs/tab-strip-bg.gif);
+	border-bottom:                      solid 1px #CBCBCB;
+	magin-left:                         10px;
+	line-height:                        16px;
+	height:                             16px;
+	color:                              black; 
+	padding-left:                       5px;	
+}
+
+.bandeauFI {	
+	font-weight:                        bold;     
+	background:                         url(images/extJs/tabs/tab-strip-bg.gif);
+	border-bottom:                      solid 1px #CBCBCB;
+	magin-left:                         10px;
+	/*line-height:                        24px;
+	height:                             24px;*/
+	color:                              black; 
+	padding-left:                       5px;	
+}
+
+.bandeauMasquee {
+	font-weight: 						bold;   
+	background-image:                   url(images/main_content/fiche-collab/prohibited.gif);
+	background-position:                left;     
+	background-repeat:					no-repeat;
+	border-bottom:						solid 1px #CBCBCB;
+	line-height: 						16px;
+	height:                             16px;
+	color:                          	black; 
+	padding-left: 						20px;	
+}
+
+
+.bandeauMasqueeFI {
+	font-weight: 						bold;
+	background-image: 					url(images/main_content/fiche-collab/prohibited.gif);
+	background-position:                left;
+	background-repeat:					no-repeat;
+	border-bottom:						solid 1px #CBCBCB;
+	/*margin-top 	: 						-10px;
+	margin-left	: 						-6px;*/
+	margin-top 	: 						-4px;
+	margin-left	: 						0px;
+	line-height: 						16px;
+	height:                             16px;
+	color:                          	black; 
+	padding-left: 						20px;	
+}
+
+.bandeauPrive {
+	font-weight: 						bold;
+	background-image: 					url(images/main_content/fiche-collab/forbidden.gif);
+	background-position:				left;
+	background-repeat:					no-repeat;
+	border-bottom:						solid 1px #CBCBCB;
+	line-height: 						16px;
+	height:                             16px;
+	color:                              black; 
+	padding-left: 						20px;
+	
+}
+
+.bandeauPriveFI {
+	font-weight: 						bold;
+	background-image: 					url(images/main_content/fiche-collab/forbidden.gif);
+	background-position:				left;
+	background-repeat:					no-repeat;
+	border-bottom:						solid 1px #CBCBCB;
+	/*margin-top 	: 						-10px;
+	margin-left	: 						-6px;*/
+	margin-top 	: 						-4px;
+	margin-left	: 						0px;
+	line-height: 						16px;
+	height:                             16px;
+	color:                              black; 
+	padding-left: 						20px;
+	
+}
+
+.masquee {
+	background-image: 					url(images/main_content/fiche-collab/prohibited.gif);
+	background-repeat:					no-repeat;
+	background-position:                left; 
+	background-color: 					#EAEDEE;  
+	line-height: 						16px;
+	height:                             16px;
+}
+
+
+.privee {
+	background-image: 					url(images/main_content/fiche-collab/forbidden.gif);
+	background-repeat:					no-repeat;
+	background-color: 					#EAEDEE; 
+	line-height: 						16px;
+	height:                             16px;
+}
+
+.theme {
+	border:						solid 1px #CBCBCB;
+	margin-top:					5px;
+}
+
+.themeFI {
+	border:						solid 0px #CBCBCB;
+	margin-top:					0px;
+}
+
+
+.themeAC {
+	border:						solid 1px #CBCBCB;
+	margin-top:					1px;
+	height:44%;
+	width: 100%;
+	overflow: auto;	
+}
+
+
+#page_main #main_content #tabs .x-tab-strip-active span.x-tab-strip-text{
+    color: white;
+}
+
+#page_main #main_content #categorie #critere .attribut {
+	position:							relative;
+	float:								left;
+	display:							block;
+	padding-right:						5px;
+	padding-left:						5px;
+	padding-top:						2px;
+	padding-bottom:						2px;
+	height: 							22px;
+}
+
+#page_main #main_content #categorie #critere .rechercher {
+	bottom:								1px;
+	position:							absolute;
+	height:								20px;
+}
+
+#page_main #main_content #categorie #critere #attribut label {
+	display:							block;
+	width:								200px;
+	color:								black;
+}
+
+#page_main #main_content #categorie #critere {
+    zoom:1;
+}
+
+
+/*
+================================================================================ 
+FICHE COLLABORATEUR
+================================================================================ 
+
+CONTENU PRINCIPAL
+================= 
+*/
+#page_main2 {
+	color:								black;
+	margin-top:							0px;
+	position:							relative;
+}
+
+#page_main2 #main_content2 {
+	position:							relative;
+}
+
+/*
+ICONE D'AIDE POUR LA PAGE EN COURS DE CONSULTATION
+==================================================
+*/
+#page_main2 #main_content2 #pagehelp a {
+	background-image: 					url(images/header/aide.gif);
+	background-repeat:					no-repeat;
+	float: 								right;
+	position: 							relative;
+	margin-top: 						6px;
+	padding-right: 						20px;
+	height:								24px;
+}
+
+
+
+#page_main2 #main_content2 #barreDeNavigation {
+	line-height: 						22px;
+	height: 							22px;
+	align:								center;
+}
+
+#page_main2 #main_content2 #barreDeNavigation ul {
+	right: 							  	400px;
+}
+
+#page_main2 #main_content2 #barreDeNavigation li {
+  	position: 							relative;
+  	margin-left: 						1px;
+  	padding-left: 						1px;
+  	left: 							  	300px;
+  	float:						       	left;
+  	text-align: left;
+}
+
+#page_main2 #main_content2 #barreDeNavigation ul li {
+ 	display:							inline;
+}
+
+#page_main2 #main_content2 #barreDeNavigation ul li span {
+	background-repeat:					no-repeat;
+	height: 							22px;
+	line-height: 						22px;
+	background-position: 				center;
+	width:								16px;
+}
+
+#page_main2 #main_content2 #barreDeNavigation ul li span.debut {
+	background-image: url(images/main_content/resultat/page-first.gif);
+	cursor:pointer;
+}
+
+#page_main2 #main_content2 #barreDeNavigation ul li span.page {
+	margin-left: 0px;
+	color: black;
+	font-size: 13px;
+}
+
+#page_main2 #main_content2 #barreDeNavigation ul li span.precedent {
+	background-image: url(images/main_content/resultat/page-prev.gif);
+	cursor:pointer;
+}
+
+#page_main2 #main_content2 #barreDeNavigation ul li span.suivant {
+	background-image: url(images/main_content/resultat/page-next.gif);
+	cursor:pointer;
+}
+
+#page_main2 #main_content2 #barreDeNavigation ul li span.fin {
+	background-image: url(images/main_content/resultat/page-last.gif);
+	cursor:pointer;
+}
+
+#page_main2 #main_content2 #barreDeNavigation ul li span.debut-disabled {
+	background-image: url(images/main_content/resultat/page-first-disabled.gif);
+}
+
+#page_main2 #main_content2 #barreDeNavigation ul li span.precedent-disabled {
+	background-image: url(images/main_content/resultat/page-prev-disabled.gif);
+}
+
+#page_main2 #main_content2 #barreDeNavigation ul li span.suivant-disabled {
+	background-image: url(images/main_content/resultat/page-next-disabled.gif);
+}
+
+#page_main2 #main_content2 #barreDeNavigation ul li span.fin-disabled {
+	background-image: url(images/main_content/resultat/page-last-disabled.gif);
+}
+
+
+#page_main2 #main_content2 #onglet {
+	position:							relative;
+	width:								100%;
+	overflow: 							hidden;
+	border-bottom: 						solid 3px #E67201;
+	font-family:Tahoma;
+}
+
+#page_main2 #main_content2 #onglet ul {
+  	margin-top: 						9px;
+  	padding: 							0px;
+  	list-style: 						none;
+  	font-family:Tahoma;
+}
+
+#page_main2 #main_content2 #onglet li {
+  	
+  	margin-left: 						3px;
+  	padding-left: 						3px;
+  	background-image: 					url(images/onglet/onglet-gauche.gif);
+  	background-repeat: 					no-repeat;
+  	height:								21px;
+  	line-height: 						21px;
+  	font-family:Tahoma;
+}
+
+#page_main2 #main_content2 #onglet ul li#actif {
+  	float: 								left;
+  	margin-left: 						3px;
+  	padding-left: 						3px;
+  	background-image: 					url(images/onglet/onglet-gauche-activate.gif);
+ 	background-repeat: 					no-repeat;
+  	height:								21px;
+  	line-height: 						21px;
+  	font-family:Tahoma;
+}
+
+#page_main2 #main_content2 #onglet ul li a {
+  	float: 								left;
+  	padding-left:						7px;
+  	padding-right:						10px;
+  	background-image: 					url(images/onglet/onglet-droit.gif);
+  	background-position: 				right;
+  	background-repeat: 					no-repeat;
+  	font-weight: 						bold;
+  	color:								black;
+  	font-family:Tahoma;
+}
+
+#page_main2 #main_content2 #onglet ul li#actif a {
+  	float: 								left;
+  	padding-left:						7px;
+  	padding-right:						12px;
+  	background-image: 					url(images/onglet/onglet-droit-activate.gif);
+  	background-position: 				right;
+  	background-repeat: 					no-repeat;
+  	font-weight: 						bold;
+  	color:								white;
+  	font-family:Tahoma;
+}
+
+#page_main2 #main_content2 #categories{
+	padding-top:						5px;
+	width: 								99%;
+}
+
+#page_main2 #main_content2 #categories #categorie h4 {
+	background-image: 				url(images/main_content/recherche/titre-recherche.gif);
+	border-bottom:					solid 1px #CBCBCB;
+	background-repeat:				repeat-x;
+	background-position:			top;
+	line-height: 					18px;
+	height:							18px;
+	padding-left:					10px;
+	width: 							100%;
+    font-size:                      11px;
+    margin:                         0;
+}
+
+#page_main2 #main_content2 #fichecollaborateur #photo {
+    position: absolute;
+    top:30px;
+    right:22px;
+    width: 122px;
+}
+
+.collabbycn {
+    font-size: 1.1em;
+}
+
+#page_main2 #main_content2 #categories #categorie #critere .attribut {
+	display:						block;
+	padding-right:					5px;
+	padding-left:					5px;
+	padding-top:					2px;
+	padding-bottom:					2px;
+}
+
+#page_main2 #main_content2 #categories #categorie {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+#page_main2 #main_content2 #categories #categorie input {
+    font-size: 10px;
+}
+
+#page_main2 #main_content2 #categories #categorie .bloc {
+    padding-left: 10px;    
+}
+
+.soldeth {    
+    height: 22px;
+    width: 50px;
+    border-bottom: 1px solid gray;
+    padding-left: 5px;
+    background-image: url(images/extJs/gray/tabs/tab-strip-bg.gif);
+}
+
+.soldetd {
+    float:left; 
+    border-right: 1px solid #555566;
+}
+
+.soldetd input {
+    padding-left: 5px;
+}
+
+.restriction {
+    font-weight: 	bold;
+    height:         26px;
+	color: 			black; 
+	padding-left: 	5px;
+    background-image: url(images/extJs/gray/tabs/tab-strip-bg.gif);
+}
+
+
+/*
+
+FORMULAIRE DE RECHERCHE
+================================================================================ 
+*/
+#page_main2 #main_content2 #recherche {
+	border-top:							solid 1px #999999;
+	border-left:						solid 1px #CBCBCB;
+	border-right:						solid 1px #CBCBCB;
+	border-bottom:						solid 1px #CBCBCB;
+	background-color:					white;
+	width: 99%;
+}
+
+#page_main2 #main_content2 #recherche h4 {
+	background-image: 					url(images/main_content/recherche/titre-recherche.gif);
+	border-bottom:						solid 1px #CBCBCB;
+	background-repeat:					repeat-x;
+	background-position:				top;
+	line-height: 						24px;
+	height:								24px;
+	padding-left:						10px;
+}
+
+.minus {
+	background-image: 					url(images/main_content/recherche/minus.gif);
+	background-position:				left;
+	background-repeat:					no-repeat;
+	color:								black;
+	font-weight: 						bold;
+	padding-left:						20px;
+	cursor:								pointer;
+}
+	
+.maxus {
+	background-image: 					url(images/main_content/recherche/maximise.gif);
+	background-position:				left;
+	background-repeat:					no-repeat;
+	color:								black;
+	font-weight: 						bold;
+	padding-left:						20px;
+	cursor:								pointer;
+}
+	
+#page_main2 #main_content2 #recherche #critere .attribut {
+	position:							relative;
+	float:								left;
+	display:							block;
+	padding-right:						5px;
+	padding-left:						5px;
+	padding-top:						2px;
+	padding-bottom:						2px;
+	width:								200px;
+	height: 							22px;
+}
+
+#page_main2 #main_content2 #recherche #critere .attributButton {
+	position:							relative;
+	display:							block;
+	text-align: 						right;
+	width:								440px;
+	height: 							22px;
+}
+
+#page_main2 #main_content2 #recherche #critere .rechercher {
+	bottom:								1px;
+	position:							absolute;
+	height:								20px;
+}
+
+#page_main2 #main_content2 #recherche #critere #attribut #label {
+	display:							block;
+	width:								200px;
+	color:								black;
+	font-size:							8;
+}
+
+
+/*
+RESULTAT DE LA RECHERCHE
+======================== 
+*/
+
+#page_main2 #resultat {
+	margin-top:							17px;
+}
+
+#page_main2 #resultat h1 {
+	color:								black;
+	font-weight: 						bold;
+}
+
+#page_main2 #resultat h1 span {
+	color:								#E67201;
+	font-weight: 						bold;
+}
+
+
+/*
+================================================================================ 
+ADMINISTRATION
+================================================================================ 
+*/
+#main_content #recherche .attributs {
+    float: left;
+    font-size: 1.1em;
+    height: 40px;
+    padding: 5px 0 10px 10px;
+    
+}
+
+
+
+/*
+================================================================================ 
+Gerer Fiche Chantier
+================================================================================ 
+*/
+
+#ficheChantier {
+    font-size: 11px;
+}
+
+#ficheChantier .x-panel-header {
+    background: url(images/main_content/recherche/titre-recherche.gif) repeat-x 0px;    
+    font-size: 11px;
+    font-weight: bold;
+    color: #000;
+}
+
+#ficheChantier #refChantier {    
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin: 5px;
+    zoom:1;
+    
+}
+
+#ficheChantier .x-tool {
+    float: left;
+}
+
+#ficheChantier .x-panel .x-panel .x-tool {
+    background: url(images/main_content/recherche/minus.gif) no-repeat;
+}
+
+#ficheChantier .x-panel .x-panel-collapsed .x-tool {
+    background: url(images/main_content/recherche/maximise.gif) no-repeat;
+}
+
+#ficheChantier #t2 .x-panel-header-text {
+    margin-left: 30px;    
+}
+
+#ficheChantier #t1 .x-panel-header-text { 
+    color: #000000;  
+}
+
+#ficheChantier #t3 .x-panel-header-text { 
+    color: #000000;  
+}
+
+.iconeRapprochement {
+    margin-left: 22px;
+    background: url(images/bouton/accept.gif) right no-repeat;
+    width: 160px;
+    zoom:1;
+}
+
+
+#ficheChantier #donneesChantier .titreSection{
+
+}
+
+#ficheChantier #donneesChantier .colonne{
+    margin: 5px;
+    float: left;
+    display: block;    
+    width: 48%;
+    zoom:1;
+}
+
+#ficheChantier #donneesChantier .contenuSection {
+    padding: 5px;
+}
+
+#ficheChantier #donneesChantier .grandeSection{    
+    display: block;
+    height: 200px;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;    
+}
+
+#ficheChantier #donneesChantier .petiteSection{
+    display: block;
+    height: 100px;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+#ficheChantier #donneesChantier #col-id-addr {    
+    zoom:1; 
+    color: #000000;   
+}
+
+#ficheChantier .libelleValeur {
+    height: 38px;    
+}
+
+#ficheChantier .libelle {
+    background-color: #f8f8ff;
+    border-bottom: 1px dotted #ccc;
+}
+
+#ficheChantier .valeur {
+    color: #000000;
+    font-weight: bold;    
+    margin-left:5px;
+}
+
+/*x-panel-header x-unselectable x-accordion-hd {}*/
+
+/*
+================================================================================ 
+Nouvelle entrée affectation et Nouvelle entrée affectationI
+================================================================================ 
+*/
+
+#main_content .blocks{
+    zoom:1;
+    height: 42px;
+}
+
+#main_content .block {
+    width: 240px;
+    height: 30px;
+}
+
+/*
+================================================================================ 
+PIED DE PAGE
+================================================================================ 
+*/
+.page_footer 
+{
+    width: 100%;
+    position: absolute;
+    top: 100px;
+}  
+
+.page_footer_content 
+{
+    height:								23px;
+    line-height:						23px;
+    border:								dotted 1px white;
+    color:								white;
+    background-color:					#AB9C8C;
+    width : auto;
+    margin-left:4px;
+    margin-right:4px;
+    padding-left:4px;
+    padding-right:4px;
+}
+
+#page_footer span {
+	float:								right;
+}

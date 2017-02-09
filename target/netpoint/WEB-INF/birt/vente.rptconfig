@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__month_92_0</property>
+            <property name="value">7</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__year_93_1</property>
+            <property name="value">2013</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_94_2</property>
+            <property name="value">revendeur_94</property>
+        </structure>
+        <structure>
+            <property name="name">revendeur_94_type_</property>
+            <property name="value">integer</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_95_3</property>
+            <property name="value">produit_95</property>
+        </structure>
+        <structure>
+            <property name="name">produit_95_type_</property>
+            <property name="value">integer</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_163_4</property>
+            <property name="value">groupe_163</property>
+        </structure>
+        <structure>
+            <property name="name">groupe_163_type_</property>
+            <property name="value">integer</property>
+        </structure>
+        <structure>
+            <property name="name">month_92_5</property>
+            <property name="value">7</property>
+        </structure>
+        <structure>
+            <property name="name">month_92_type_</property>
+            <property name="value">integer</property>
+        </structure>
+        <structure>
+            <property name="name">year_93_6</property>
+            <property name="value">2013</property>
+        </structure>
+        <structure>
+            <property name="name">year_93_type_</property>
+            <property name="value">integer</property>
+        </structure>
+    </list-property>
+</report>

@@ -1,0 +1,31 @@
+<decorators defaultdir="/WEB-INF/jsp/decorators">
+	
+	<excludes>
+	    <pattern>/ajax*</pattern>
+	    <pattern>**/error*</pattern>
+	     <pattern>/onglet*</pattern>
+	     <pattern>/login*</pattern>
+	     <pattern>/maildrop*</pattern>
+	     <pattern>/newpassword*</pattern>
+	     <pattern>/changepassword*</pattern>
+	     <pattern>*/rapport_birt?*</pattern>
+	     <pattern>/*/*/ajax*</pattern>
+	     <pattern>/*/*/ajax</pattern>
+	     <pattern>**/*/ajax</pattern>
+	     <pattern>**/ajax*</pattern>
+	     <pattern>*ajax*</pattern>
+	     <pattern>**/ajax/rapport_birt*</pattern>
+	     <pattern>*preview?*</pattern>
+	     <pattern>*/preview?*</pattern>
+	     <pattern>/endpoints/*</pattern>
+	    
+	</excludes>
+
+	<decorator name="no-decorator">
+	</decorator>
+
+	<decorator name="default" page="site.jsp" >
+		<pattern>/*</pattern>
+	</decorator>
+
+</decorators>

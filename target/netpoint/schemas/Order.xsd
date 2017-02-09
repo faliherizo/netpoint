@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns="http://com.netpoint/schemas"
+	targetNamespace="http://com.netpoint/schemas" attributeFormDefault="unqualified">
+<xsd:element name="Order" type="Order" />
+<xsd:complexType name="Order">
+		<xsd:sequence>
+			<xsd:element name="codeclient" type="xsd:string"/>
+			<xsd:element name="date_fin" type="xsd:date"/>
+			<xsd:element name="nombreposte" type="xsd:decimal"/>
+			<xsd:element name="orderDate" type="xsd:date"/>
+			<xsd:element name="numeroCommande" type="xsd:string"/>
+			<xsd:element name="quantity" type="xsd:decimal"/>
+			<xsd:element name="numeroRevendeur" type="xsd:string"/>
+			<xsd:element name="product" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="Customer" type="Customer" />
+	<xsd:complexType name="Customer">
+		<xsd:attribute name="codeclient" type="xsd:string"/>
+		<xsd:attribute name="telephone" type="xsd:string"/>
+		<xsd:attribute name="email" type="xsd:string"/>
+		<xsd:attribute name="name" type="xsd:string"/>
+		<xsd:attribute name="lastname" type="xsd:string"/>
+		<xsd:attribute name="societe" type="xsd:string"/>
+		<xsd:attribute name="pays" type="xsd:string"/>
+		<xsd:attribute name="siret" type="xsd:int"/>
+		<xsd:attribute name="rcs" type="xsd:int"/>
+		<xsd:attribute name="langue" type="xsd:string"/>
+	</xsd:complexType>
+</xsd:schema>  

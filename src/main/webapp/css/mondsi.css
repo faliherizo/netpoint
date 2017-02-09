@@ -1,0 +1,6 @@
+@CHARSET "ISO-8859-1";
+.error {
+	margin-left:5px;
+	color:red;
+	font-size: 70%;
+}

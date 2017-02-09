@@ -1,0 +1,193 @@
+#navigation {
+	float:right;
+}
+
+#navigation ul li {
+	display: 				inline;
+    padding:0;
+    margin: 0;
+    zoom:1;
+}
+
+#navigation ul li span {
+	background-repeat:	no-repeat;
+    width: 14px;
+    height: 16px;
+    zoom:1;
+}
+
+#main_content #resultat #navigation .pageinput {
+	color:black;
+	text-align: right;
+    font-size: 12px;
+    line-height:11px;
+    padding-bottom: 1px;
+    width: 20px;
+	border:solid 1px red;
+}
+
+#resultat#navigation ul li .page {
+	color:black;    
+    text-align: center;
+    font-size: 12px;
+    width: 40px;
+    padding-bottom: 1px;
+}
+
+#main_content #resultat  #navigation ul li .debut {
+	background-image: url(images/main_content/resultat/page-first.gif);
+
+}
+
+#main_content #navigation ul li .precedent {
+	background-image: url(images/main_content/resultat/page-prev.gif);
+	
+}
+
+ #main_content #navigation ul li .suivant {
+	background-image: url(images/main_content/resultat/page-next.gif);
+	
+}
+
+#main_content #navigation ul li .fin {
+	background-image: url(images/main_content/resultat/page-last.gif);
+	
+}
+
+#main_content #navigation ul li .debut-disabled {
+	background-image: url(images/main_content/resultat/page-first-disabled.gif);
+}
+
+#main_content #navigation ul li .precedent-disabled {
+	background-image: url(images/main_content/resultat/page-prev-disabled.gif);
+}
+
+#main_content #navigation ul li .suivant-disabled {
+	background-image: url(images/main_content/resultat/page-next-disabled.gif);
+}
+
+#navigation ul li .fin-disabled {
+	background-image: url(images/main_content/resultat/page-last-disabled.gif);
+}
+
+#grid table {
+	width: 								98%;
+	background-color: 					#FFFFFF;
+	border:								0px;
+	border-spacing:						0px;
+	padding-top:						0px;
+	border-right: 						solid 1px black;    
+}
+
+#grid table thead tr {
+	position:							relative; 
+	top: 								expression(offsetParent.scrollTop);
+	background-image: 					url(images/main_content/recherche/titre-recherche.gif);
+	background-repeat:					repeat-x;
+	cursor: 							pointer;
+}
+
+#grid table thead tr th {
+	color: 								black;
+	font-weight: 						bold;
+	border-top: 						solid 1px black;
+	border-bottom: 						solid 1px black;
+	border-left:						solid 1px black;
+	height:								22px;
+	line-height:						22px;
+	text-align: 						left;
+}
+
+
+#grid table thead tr th a {
+	text-decoration:					none;
+	color:								black;
+	white-space: 						nowrap; 
+	padding-left: 						20px;
+    font-size:							11px;
+    display: 							block;
+    zoom: 								1;
+}
+#grid table thead tr th a.image {
+	padding-left: 4px;
+}
+
+#grid table thead tr th.sortable {		
+	background-image: 					url(images/main_content/resultat/arrow_off.png);
+	background-repeat: 					no-repeat;
+	background-position: 				5px center;
+	
+}
+
+#grid table thead tr th.order1 {	
+	background-image: 					url(images/main_content/resultat/arrow_down.png);
+	background-repeat: 					no-repeat;
+	background-position: 				5px center;
+	
+}
+
+#grid table thead tr th.order2 {	
+	background-image: 					url(images/main_content/resultat/arrow_up.png);
+	background-repeat: 					no-repeat;
+	background-position: 				5px center;
+	display:							inline;
+}
+
+#grid table>tbody { 
+	overflow: auto; 	
+	overflow-x: hidden;
+}
+
+#grid table tbody tr td {
+	text-align: 						left;
+	border-left:						solid 1px black;
+	color:								black;
+	border-bottom: 						solid 1px black;
+	padding-left:						5px;
+	line-height:						24px;
+	height:								24px;
+}
+
+#grid table tbody tr td a {
+	color:								black;
+	text-decoration:					underline;
+    white-space: nowrap;
+    font-size:							11px;
+}
+
+#grid table tbody tr.even {
+	background-color: 					#EFEFEF;
+    font-size:							11px;   
+}
+
+#grid table tbody tr.odd {
+	background-color: 					white;
+     font-size:							11px;
+}
+
+#navigation ul li span.loading {
+	background-image: 					url(imgages/main_content/resultat/loading.gif);
+	margin-right:						15px;
+}
+
+#waiting 
+{
+    position: absolute;
+    background-color: #4f4444;
+    background-image: url(images/main_content/resultat/loading.gif);
+    width: 102%;
+    height: 100%;
+    top:0;
+    left:0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1000;
+}
+
+.datefield_ext
+{
+    width:55px;
+    border:none;
+    background:none;
+    cursor:pointer;
+}

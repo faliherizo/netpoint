@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__pProdLine_9_0</property>
+            <property name="value">Planes</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__pCustomer_12_1</property>
+            <property name="value">Australian Collectors, Co.</property>
+        </structure>
+        <structure>
+            <property name="name">pModQuery_70_2</property>
+            <property name="value">false</property>
+        </structure>
+        <structure>
+            <property name="name">pModQuery_70_type_</property>
+            <property name="value">boolean</property>
+        </structure>
+        <structure>
+            <property name="name">pProdLine_9_3</property>
+            <property name="value">Planes</property>
+        </structure>
+        <structure>
+            <property name="name">pProdLine_9_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">pProdLine_9_expr_</property>
+            <property name="value">dataSetRow["PRODUCTLINE"]</property>
+        </structure>
+        <structure>
+            <property name="name">pCustomer_12_4</property>
+            <property name="value">Australian Collectors, Co.</property>
+        </structure>
+        <structure>
+            <property name="name">pCustomer_12_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">pCustomer_12_expr_</property>
+            <property name="value">dataSetRow["CUSTOMERNAME"]</property>
+        </structure>
+    </list-property>
+</report>

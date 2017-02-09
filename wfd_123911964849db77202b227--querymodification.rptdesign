@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.17" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.3.2.v20081204-1200 Build &lt;2.3.2.v20081204-1200></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <parameters>
+        <scalar-parameter name="pProdLine" id="9">
+            <property name="hidden">false</property>
+            <property name="valueType">dynamic</property>
+            <property name="dataType">string</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">list-box</property>
+            <property name="dataSetName">prodLineSet</property>
+            <expression name="valueExpr">dataSetRow["PRODUCTLINE"]</expression>
+            <expression name="labelExpr">dataSetRow["PRODUCTLINE"]</expression>
+            <property name="mustMatch">false</property>
+            <property name="fixedOrder">true</property>
+            <property name="defaultValue">Planes</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="pCustomer" id="12">
+            <property name="valueType">dynamic</property>
+            <property name="dataType">string</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">list-box</property>
+            <property name="dataSetName">custSet</property>
+            <expression name="valueExpr">dataSetRow["CUSTOMERNAME"]</expression>
+            <expression name="labelExpr">dataSetRow["CUSTOMERNAME"]</expression>
+            <property name="mustMatch">false</property>
+            <property name="fixedOrder">true</property>
+            <property name="defaultValue">Australian Collectors, Co.</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="pModQuery" id="70">
+            <property name="valueType">static</property>
+            <property name="dataType">boolean</property>
+            <property name="paramType">simple</property>
+            <property name="controlType">check-box</property>
+            <property name="defaultValue">false</property>
+            <property name="distinct">true</property>
+            <structure name="format"/>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="7">
+            <property name="odaDriverClass">org.eclipse.birt.report.data.oda.sampledb.Driver</property>
+            <property name="odaURL">jdbc:classicmodels:sampledb</property>
+            <property name="odaUser">ClassicModels</property>
+            <property name="OdaConnProfileName"></property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="prodLineSet" id="8">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">PRODUCTLINE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">PRODUCTLINE</property>
+                    <property name="nativeName">PRODUCTLINE</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="queryText">SELECT CLASSICMODELS.PRODUCTLINES.PRODUCTLINE
+FROM CLASSICMODELS.PRODUCTLINES</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="custSet" id="11">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">CUSTOMERNAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">CUSTOMERNAME</property>
+                    <property name="nativeName">CUSTOMERNAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="queryText">SELECT CLASSICMODELS.CUSTOMERS.CUSTOMERNAME
+FROM CLASSICMODELS.CUSTOMERS</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="tableSet" id="41">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">ORDERNUMBER</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">QUANTITYORDERED</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">PRICEEACH</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">CUSTOMERNAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <method name="beforeOpen"><![CDATA[if(params["pModQuery"].value == true){
+  this.queryText = "SELECT CLASSICMODELS.ORDERS.ORDERNUMBER, " +
+      "CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED, " +
+      "CLASSICMODELS.ORDERDETAILS.PRICEEACH,  " +
+      "CLASSICMODELS.CUSTOMERS.CUSTOMERNAME " +
+   "FROM CLASSICMODELS.ORDERS, CLASSICMODELS.ORDERDETAILS, " + 
+      "CLASSICMODELS.CUSTOMERS, CLASSICMODELS.PRODUCTS " +
+   "WHERE CLASSICMODELS.PRODUCTS.PRODUCTLINE = '" + params["pProdLine"].value + "' " +
+      "AND CLASSICMODELS.CUSTOMERS.CUSTOMERNAME = '" + params["pCustomer"].value + "' " +
+      "AND CLASSICMODELS.PRODUCTS.PRODUCTCODE = CLASSICMODELS.ORDERDETAILS.PRODUCTCODE " +
+      "AND CLASSICMODELS.ORDERS.ORDERNUMBER = CLASSICMODELS.ORDERDETAILS.ORDERNUMBER " +
+      "AND CLASSICMODELS.CUSTOMERS.CUSTOMERNUMBER = CLASSICMODELS.ORDERS.CUSTOMERNUMBER";
+}]]></method>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">ORDERNUMBER</property>
+                    <property name="nativeName">ORDERNUMBER</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">QUANTITYORDERED</property>
+                    <property name="nativeName">QUANTITYORDERED</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">PRICEEACH</property>
+                    <property name="nativeName">PRICEEACH</property>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">CUSTOMERNAME</property>
+                    <property name="nativeName">CUSTOMERNAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="queryText">SELECT CLASSICMODELS.ORDERS.ORDERNUMBER, 
+	CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED,
+	CLASSICMODELS.ORDERDETAILS.PRICEEACH, 
+	CLASSICMODELS.CUSTOMERS.CUSTOMERNAME
+FROM CLASSICMODELS.ORDERS, CLASSICMODELS.ORDERDETAILS, 
+	CLASSICMODELS.CUSTOMERS, CLASSICMODELS.PRODUCTS
+WHERE CLASSICMODELS.PRODUCTS.PRODUCTCODE = CLASSICMODELS.ORDERDETAILS.PRODUCTCODE
+	AND CLASSICMODELS.ORDERS.ORDERNUMBER = CLASSICMODELS.ORDERDETAILS.ORDERNUMBER
+	AND CLASSICMODELS.CUSTOMERS.CUSTOMERNUMBER = CLASSICMODELS.ORDERS.CUSTOMERNUMBER</property>
+            <xml-property name="designerValues"><![CDATA[]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">"Verdana"</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="topMargin">0.25in</property>
+            <property name="leftMargin">0.25in</property>
+            <property name="bottomMargin">0.25in</property>
+            <property name="rightMargin">0.25in</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="42">
+            <property name="textAlign">center</property>
+            <property name="width">100%</property>
+            <property name="dataSet">tableSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">ORDERNUMBER</property>
+                    <property name="displayName">ORDERNUMBER</property>
+                    <expression name="expression">dataSetRow["ORDERNUMBER"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">QUANTITYORDERED</property>
+                    <property name="displayName">QUANTITYORDERED</property>
+                    <expression name="expression">dataSetRow["QUANTITYORDERED"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">PRICEEACH</property>
+                    <property name="displayName">PRICEEACH</property>
+                    <expression name="expression">dataSetRow["PRICEEACH"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">CUSTOMERNAME</property>
+                    <property name="displayName">CUSTOMERNAME</property>
+                    <expression name="expression">dataSetRow["CUSTOMERNAME"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="66"/>
+            <column id="67"/>
+            <column id="68"/>
+            <column id="69"/>
+            <header>
+                <row id="43">
+                    <cell id="44">
+                        <label id="45">
+                            <text-property name="text">ORDERNUMBER</text-property>
+                        </label>
+                    </cell>
+                    <cell id="46">
+                        <label id="47">
+                            <text-property name="text">QUANTITYORDERED</text-property>
+                        </label>
+                    </cell>
+                    <cell id="48">
+                        <label id="49">
+                            <text-property name="text">PRICEEACH</text-property>
+                        </label>
+                    </cell>
+                    <cell id="50">
+                        <label id="51">
+                            <text-property name="text">CUSTOMERNAME</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="52">
+                    <cell id="53">
+                        <data id="54">
+                            <property name="resultSetColumn">ORDERNUMBER</property>
+                        </data>
+                    </cell>
+                    <cell id="55">
+                        <data id="56">
+                            <property name="resultSetColumn">QUANTITYORDERED</property>
+                        </data>
+                    </cell>
+                    <cell id="57">
+                        <data id="58">
+                            <property name="resultSetColumn">PRICEEACH</property>
+                        </data>
+                    </cell>
+                    <cell id="59">
+                        <data id="60">
+                            <property name="resultSetColumn">CUSTOMERNAME</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="61">
+                    <cell id="62"/>
+                    <cell id="63"/>
+                    <cell id="64"/>
+                    <cell id="65"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

@@ -1,0 +1,1 @@
+INSERT INTO `mondsi`.`revendeur` (`id`, `code`, `dateCreation`, `dateFin`, `commercial`, `droitCreationRevendeur`, `revendeurParent`, `emailAutomatique`, `niveau`, `partnerCode`, `partnerPwd`, `etat`, `compte_bancaire`) VALUES (NULL, '2222', '2012-02-25', '2012-02-29', NULL, NULL, NULL, NULL, NULL, '1234', '222222', '1', '1');
